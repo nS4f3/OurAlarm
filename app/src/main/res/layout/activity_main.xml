@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/mainBack"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_gradient"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="86dp">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextsss"
+            android:hint="@string/editexthint"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:layout_marginBottom="@android:dimen/app_icon_size">
+
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="HappyBirthday"
+            android:text="@string/sendNotBut"
+            android:layout_marginTop="@android:dimen/app_icon_size">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
